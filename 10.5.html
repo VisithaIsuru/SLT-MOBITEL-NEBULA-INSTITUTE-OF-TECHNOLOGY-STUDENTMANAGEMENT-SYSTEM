@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SLT MOBITEL NEBULA INSTITUTE OF TECHNOLOGY STUDENTMANAGEMENT SYSTEM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+
+    <!--Them Style-->
+    <link rel="stylesheet" href="assets/css/adminlte.min.css">
+
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Add a gray background color to the specified section */
+        .custom-background-section {
+            background-color: #f2f2f2; /* You can adjust the color as needed */
+        }
+
+        .card-body h5 {
+            font-size: 20px; /* Adjust the font size as needed */
+            font-weight: bold; /* Set font weight to bold for section titles */
+            margin-bottom: 15px; /* Add spacing below the section titles */
+        }
+
+        .form-group.row label {
+            font-size: 16px; /* Adjust the font size as needed */
+            font-weight: bold; /* Set font weight to bold for form labels */
+        }
+        .custom-btn-width {
+        width: 120px; /* Adjust the width as needed */
+    }
+
+    .custom-btn-color {
+        color: black; /* Set the text color to black */
+    }
+    .custom-payment-section .payment-details-title {
+            padding-left: 90px; /* Add padding to the left of the payment details title */
+        }
+
+        .custom-section .col-sm-2,
+        .custom-section .col-sm-4 {
+            width: 200px; /* Adjust the width as needed */
+            text-align: right;
+        }
+
+        .custom-payment-section .payment-details-title {
+            padding-left: 20px; /* Adjust padding */
+        }
+
+        .custom-payment-section .form-group.row,
+        .custom-intake-section .form-group.row {
+            align-items: baseline; /* Align labels and input fields on the same baseline */
+        }
+
+        .custom-section h5 {
+            margin-bottom: 15px; /* Add spacing below the section title */
+            padding-left: 20px; /* Add padding to the left of the title */
+        }
+
+        .custom-section .col-sm-6 {
+            width: 100%; /* Make it full-width */
+        }
+
+        .custom-section .section-title {
+            padding-left: 20px; /* Add padding to the left of the section title */
+        }
+        .form-check {
+            margin-left: 0;
+        }
+        
+
+    </style>
+</head>
+  <body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <!--Navbar-->
+        <nav class="main-header navbar navbar-expand navber-white navbar-light">
+            <!--Left navbar links-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+            <h2>NEBULA INSTITUTE OF TECHNOLOGY</h2>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <img style="width: 200px;" src="assets/img/logo_nebula.png" alt="">
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar elevation-4" style="background-color:#DADEFF; height: 300vh;">
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <!-- Sidebar Menu -->
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                            <!-- Add icons to the links using the .nav-icon class
+                                with font-awesome or any other icon font library -->
+                                <li class="nav-item has-treeview menu-open">
+                                    <a href="10.4.html" class="nav-link">
+                                        <i class="nav-icon fas fa-user-alt"></i>
+                                        <p>Student Registration</p>
+                                    </a>
+                     
+                                </li>
+                            <li class="nav-item">
+                                <a href="./10.5.html" class="nav-link">
+                                    <i class="nav-icon fas fa-graduation-cap"></i>
+                                    <p>Course Registration</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fa fa-check-square"></i>
+                                    <p>Eligibility & Registration</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fa fa-id-badge"></i>
+                                    <p>Student Profile</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./10.8.html" class="nav-link">
+                                    <i class="nav-icon fas fa-address-card"></i>
+                                    <p>Student Other Information</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fas fa-edit"></i>
+                                    <p>Course Management</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./10.9.html" class="nav-link">
+                                    <i class="nav-icon fas fa-table"></i>
+                                    <p>Module Management</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./10.3.html" class="nav-link">
+                                    <i class="nav-icon far fa-calendar-alt"></i>
+                                    <p>Intake Creation</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./10.10.html" class="nav-link">
+                                    <i class="nav-icon far fa-credit-card"></i>
+                                    <p>Payement</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fas fa-credit-card"></i>
+                                    <p>Overall Payment</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./10.11.html" class="nav-link">
+                                    <i class="nav-icon fas fa-calculator"></i>
+                                    <p>Late Payment Calculation</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fa fa-percent"></i>
+                                    <p>Exam Results</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fa fa-calendar-check"></i>
+                                    <p>Attendance</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fas fa-users"></i>
+                                    <p>Student Lists</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fa fa-table"></i>
+                                    <p>Time Tables</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fas fa-file"></i>
+                                    <p>Clearance Form</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fas fa-tachometer-alt"></i>
+                                    <p>Dashboard</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fa fa-user-circle"></i>
+                                    <p>Admin Profile</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="" class="nav-link">
+                                    <i class="nav-icon fas fa-sign-out-alt"></i>
+                                    <p>Logout</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>   
+            </div>
+        </aside>
+    </div>
+
+    <!--Content Wrapper. Contains page content-->
+    <div class="content-wrapper navbar-white">
+        <div class="content-header">
+            <div class="content-fluid">
+                <div class="row mb-2">
+                    <div class="col-12 p-4 text-center">
+                        <h1 class="m-0 font-weight-bold">Course Registration</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <div class="container">
+                <div class="custom-payment-section custom-section">
+                    <div class="form-group row">
+                        <!-- Student NIC -->
+                        <label for="inputBatchSize" class="col-sm-2 col-form-label">Student NIC</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="inputBatchSize" placeholder="Enter Student ID(NIC)">
+                        </div>
+                    </div>
+                    <!-- Continue with other form groups or content -->
+                </div>
+            </div>
+        </section>
+            
+        <section class="content custom-width custom-background-section">
+            <div class="container">
+                <!--form start-->
+                <form>
+                    <br>
+                        <div class="form-group row">
+                            <label for="inputNameWithInitials" class="col-sm-2 col-form-label">Name</label>
+                            <div class="col-sm-5"> <!-- Adjusted width -->
+                                <input type="text" class="form-control" id="inputNameWithInitials" placeholder="J P Kodithuwakku">
+                            </div>
+                        </div>
+                    
+                        <div class="form-group row">
+                            <label for="inputNameWithInitials" class="col-sm-2 col-form-label">NIC</label>
+                            <div class="col-sm-5"> <!-- Adjusted width -->
+                                <input type="text" class="form-control" id="inputNameWithInitials" placeholder="Janani Parindya">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dropdown2" class="col-sm-2 col-form-label">O/L Exam</label>
+                            <div class="col-sm-2">
+                                <input type="tel" class="form-control" id="inputHome" placeholder="LOCAL">
+                            </div>
+
+                            <label for="inputHome" class="col-sm-2 col-form-label text-sm-right">Year</label>
+                            <div class="col-sm-2">
+                                <input type="tel" class="form-control" id="inputHome" placeholder="2016">
+                            </div>
+                        </div>
+               
+                        <div class="form-group row align-items-center">
+                            <label for="dropdownMaths" class="col-sm-2 col-form-label text-center">Maths</label>
+                            <div class="col-sm-1">
+                                <select class="form-control" id="dropdownMaths" name="dropdownMaths">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row align-items-center">
+                            <label for="dropdownEnglish" class="col-sm-2 col-form-label text-center">English</label>
+                            <div class="col-sm-1">
+                                <select class="form-control" id="dropdownEnglish" name="dropdownEnglish">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row">
+                            <label for="dropdownMaths" class="col-sm-2 col-form-label text-center">Science</label>
+                            <div class="col-sm-1">
+                                <select class="form-control" id="dropdownMaths" name="dropdownMaths">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="dropdownEnglish" class="col-sm-2 col-form-label text-center">History</label>
+                            <div class="col-sm-1">
+                                <select class="form-control" id="dropdownEnglish" name="dropdownEnglish">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dropdownMaths" class="col-sm-2 col-form-label text-center">Religion</label>
+                            <div class="col-sm-1">
+                                <select class="form-control" id="dropdownMaths" name="dropdownMaths">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="form-group row">
+                            <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Nation</label>
+                            <div class="col-sm-1">
+                                <select class="form-control" id="dropdownNation" name="dropdownNation">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Commerce</label>
+                            <div class="col-sm-1">
+                                <select class="form-control" id="dropdownNation" name="dropdownNation">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dropdownNation" class="col-sm-2 col-form-label text-center">ICT</label>
+                            <div class="col-sm-1">
+                                <select class="form-control" id="dropdownNation" name="dropdownNation">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dropdownNation" class="col-sm-2 col-form-label text-center">English Literature</label>
+                            <div class="col-sm-1">
+                                <select class="form-control" id="dropdownNation" name="dropdownNation">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dropdown2" class="col-sm-2 col-form-label">A/L Exam</label>
+                            <div class="col-sm-2">
+                                <input type="tel" class="form-control" id="inputHome" placeholder="LOCAL">
+                            </div>
+
+                            <label for="inputHome" class="col-sm-2 col-form-label text-sm-right">Year</label>
+                            <div class="col-sm-2">
+                                <input type="tel" class="form-control" id="inputHome" placeholder="2019">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="dropdownStream" class="col-sm-2 col-form-label">Stream</label>
+                            <div class="col-sm-2">
+                                <select class="form-control" id="dropdownStream" name="dropdownStream" onchange="updateStreamText()">
+                                    <option value="physicalScience">Physical Science</option>
+                                    <!-- Add more stream options as needed -->
+                                </select>
+                            </div>
+                        </div>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                var selectedOption1 = sessionStorage.getItem('selectedOption1');
+                                var selectedOption2 = sessionStorage.getItem('selectedOption2');
+                    
+                                // Populate dropdowns with selected values
+                                document.getElementById('dropdown1').innerHTML = '<option value="' + selectedOption1 + '">' + selectedOption1 + '</option>';
+                                document.getElementById('dropdown2').innerHTML = '<option value="' + selectedOption2 + '">' + selectedOption2 + '</option>';
+                            });
+                        </script>
+
+                                <div class="form-group row">
+                                    <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Combiined Maths</label>
+                                    <div class="col-sm-1">
+                                        <select class="form-control" id="dropdownNation" name="dropdownNation">
+                                            <option>A</option>
+                                            <option>B</option>
+                                            <option>C</option>
+                                            <option>D</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Physics</label>
+                                    <div class="col-sm-1">
+                                        <select class="form-control" id="dropdownNation" name="dropdownNation">
+                                            <option>A</option>
+                                            <option>B</option>
+                                            <option>C</option>
+                                            <option>D</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Chemistry</label>
+                                    <div class="col-sm-1">
+                                        <select class="form-control" id="dropdownNation" name="dropdownNation">
+                                            <option>A</option>
+                                            <option>B</option>
+                                            <option>C</option>
+                                            <option>D</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <br>
+                               
+                </form>       
+        </section>
+        <br>
+        <section class="content custom-width ">
+            <div class="container">
+                <!--form start-->
+                <form>
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label for="dropdownCourse" class="col-sm-2 col-form-label">Course</label>
+                            <div class="col-sm-5"> <!-- Adjusted width to be as wide as Batch Size and Location -->
+                                <select class="form-control select2" id="dropdownCourse" name="dropdownCourse">
+                                    <option selected="selected">Pearson BTEC Digital Technologies</option>
+                                    <!-- Add more options as needed -->
+                                    <option>Another Course</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <!-- Batch Size -->
+                            <label for="inputBatchSize" class="col-sm-2 col-form-label">Course ID</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="inputBatchSize" placeholder="BTEc/DT">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dropdown2" class="col-sm-2 col-form-label">Batch</label>
+                            <div class="col-sm-1">
+                                <select class="form-control select2" id="dropdown2" name="dropdown2">
+                                    <option selected="selected">23-1</option>
+                                    <option>23-2</option>
+                                    <option>23-3</option>
+                                    <option>24-1</option>
+                                    <option>24-2</option>
+                                    <option>24-3</option>
+                                </select>
+                            </div>
+                        </div>
+                            <div class="form-group row">
+                                <label for="inputEndDate" class="col-sm-2 col-form-label">Date</label>
+                                <div class="col-sm-3">
+                                    <input type="date" class="form-control" id="inputEndDate">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <!-- Batch Size -->
+                                <label for="inputBatchSize" class="col-sm-2 col-form-label">Registration Fee</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="inputBatchSize">
+                                </div>
+                            </div>
+<br>
+                    <!-- Student Counsellor Details Title -->
+                    <div class="form-group row">
+                         <div class="col-sm-12">
+                            <p><b>Student Counsellor Details -----------------------------------------------------------------------------</b></p>
+                        </div>
+                    </div>   
+                    
+                    
+                    <div class="form-group row">
+                        <!-- Batch Size -->
+                        <label for="inputBatchSize" class="col-sm-2 col-form-label">Name</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="inputBatchSize">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <!-- Batch Size -->
+                        <label for="inputBatchSize" class="col-sm-2 col-form-label">Service No</label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="inputBatchSize">
+                        </div>
+                    </div>
+
+                    <br>
+                    <br>
+                    <!-- Marketing Survey sentence -->
+                        <p><b>Marketing Survey</b></p>
+                    <!-- Horizontal line -->
+                    <hr>  
+                    <p>Please select the media source(s) through which you get to know about this course.</p>      
+
+                    <div>
+                        <!-- Checkbox group 1 -->
+                        <div style="float: left; width: 33%; text-align: left;">
+                            <div>
+                                <input type="checkbox" id="checkbox1">
+                                <label for="checkbox1">Newspaper</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox2">
+                                <label for="checkbox2">Facebook</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox3">
+                                <label for="checkbox3">SMS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox4">
+                                <label for="checkbox4">Friend</label>
+                            </div>
+                        </div>
+                        
+                        <!-- Checkbox group 2 -->
+                        <div style="display: inline-block; width: 33%; text-align: left;">
+                            <div>
+                                <input type="checkbox" id="checkbox5">
+                                <label for="checkbox5">Exhibition</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox6">
+                                <label for="checkbox6">Radio</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox7">
+                                <label for="checkbox7">SLT Employee</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox8">
+                                <label for="checkbox8">Previous Student</label>
+                            </div>
+                        </div>
+                    
+                        <!-- Checkbox group 3 -->
+                        <div style="float: right; width: 33%; text-align: left;">
+                            <div>
+                                <input type="checkbox" id="checkbox9">
+                                <label for="checkbox9">Training Centre Website</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="checkbox10">
+                                <label for="checkbox10">Other</label>
+                            </div>
+                        </div>
+                    </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-sm-2">
+                <button type="submit" class="btn btn-danger btn-lg btn-block">Register</button>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-center mt-2"> <!-- Adjusted margin-top -->
+            <div class="col-sm-3">
+                <button type="button" class="btn btn-primary btn-lg btn-block" style="border-radius: 20px; color: black; font-weight: bold;">Check Eligibility<span class="arrow">&rarr;</span></button> <!-- Changed button color to blue -->
+            </div>
+        </div>
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+    <script>
+    $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- ChartJS -->
+    <!-- Sparkline -->
+    <script src="plugins/sparklines/sparkline.js"></script>
+    <!-- JQVMap -->
+    <script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+    <!-- jQuery Knob Chart -->
+    <script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+    <!-- daterangepicker -->
+    <script src="plugins/moment/moment.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Summernote -->
+    <script src="plugins/summernote/summernote-bs4.min.js"></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="assets/js/adminlte.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <script src="assets/js/pages/dashboard.js"></script>
+
+  
+
+  </body>
+</html>

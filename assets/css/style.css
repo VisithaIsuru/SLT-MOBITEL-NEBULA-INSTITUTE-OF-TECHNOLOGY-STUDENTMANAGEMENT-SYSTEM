@@ -1,0 +1,114 @@
+ /* Custom CSS */
+ .custom-width {
+    max-width: 1120px; /* Adjust the max-width as needed */
+    width: 100%; /* Set width to 100% initially */
+    margin: 0 auto; /* Center the element on the page */
+}
+
+.custom-container {
+    max-width: 2800px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the element on the page */
+}
+
+.main-header.navbar {
+    border-bottom: 4px solid #2a1870;
+    margin: 0 20px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+margin-top: 0;}
+
+.main-sidebar {
+    margin-top: 75px;
+    height: 100vh;
+}
+
+aside.main-sidebar {
+    margin-top: 75px;
+    height: 100vh;
+}
+.custom-margin {
+margin: 0 0;}
+
+.main-header h2 {
+    font-weight: 800;
+}
+
+  /* Custom CSS */
+  .nav-sidebar .nav-item > a {
+    padding: 10px; /* Adjust the padding as needed */
+    background-color: #7DC992; /* Replace with your desired background color */
+    color: #000;
+  }
+
+.card{
+    background-color: #f3f3f3;
+}
+
+.card-header{
+    border: #f3f3f3;
+}
+
+
+
+#dropdown5.form-control {
+    
+    background-color:#f3f3f3;
+    border-radius: 10px;
+}
+
+.form-row .form-group label{
+    font-weight: 400;
+}
+.card-header strong{
+    font-weight: 500;
+}
+
+.custom-btn {
+    background-color: #d7d7d7;
+}
+
+.btn.btn-block.btn-danger {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    color: #000000; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.red-placeholder::placeholder {
+    color: red;}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .custom-width {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-width {
+        max-width: 100%;
+        margin: 0 16px; /* Adjust the margin as needed for smaller screens */
+    }
+}
+
+.custom-gap {
+    margin-left: 80px; /* Adjust the margin-left value as needed */
+}
+
+.custom-label {
+    width: 150px; /* Adjust the width as needed */
+}
+
+.rounded-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px; /* Adjust the border-radius as needed */
+    overflow: hidden; /* Ensure the rounded corners are visible */
+}
+
+.rounded-table th,
+.rounded-table td {
+    border: 1px solid #dee2e6; /* Ensure borders are consistent */
+    padding: 8px; /* Add padding for better visual appearance */
+}
