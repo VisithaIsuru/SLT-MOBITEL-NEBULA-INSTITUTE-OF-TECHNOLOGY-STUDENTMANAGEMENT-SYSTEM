@@ -35,6 +35,7 @@
         /* Add a gray background color to the specified section */
         .custom-background-section {
             background-color: #f2f2f2; /* You can adjust the color as needed */
+            width: 1000px;
         }
 
         .card-body h5 {
@@ -88,8 +89,25 @@
         .form-check {
             margin-left: 0;
         }
-        
-
+    
+        .label-space {
+        margin-left: 150px; /* Adjust the margin as needed */
+    }
+    .label1-space {
+        margin-left: 60px; /* Adjust the margin as needed */
+    }
+    .short-dropdown {
+        width: 75%; /* Adjust the width as needed */
+    }
+    .custom-textbox {
+        width: 220px; /* Adjust the width as needed */
+    }
+    .custom-label-padding {
+        margin-left: 50px; /* Adjust the padding as needed */
+    }
+    .custom-textbox-margin {
+        margin-left: 120px; /* Adjust the margin as needed */
+    }
     </style>
 </head>
   <body class="hold-transition sidebar-mini">
@@ -112,7 +130,7 @@
         </nav>
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar elevation-4" style="background-color:#DADEFF; height: 300vh;">
+        <aside class="main-sidebar elevation-4" style="background-color:#DADEFF; height: 330vh;">
 
             <!-- Sidebar -->
             <div class="sidebar">
@@ -131,19 +149,19 @@
                      
                                 </li>
                             <li class="nav-item">
-                                <a href="./10.5.html" class="nav-link">
+                                <a href="10.5.html" class="nav-link">
                                     <i class="nav-icon fas fa-graduation-cap"></i>
                                     <p>Course Registration</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.6.html" class="nav-link">
                                     <i class="nav-icon fa fa-check-square"></i>
                                     <p>Eligibility & Registration</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.7.html" class="nav-link">
                                     <i class="nav-icon fa fa-id-badge"></i>
                                     <p>Student Profile</p>
                                 </a>
@@ -155,7 +173,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="./10.5.html" class="nav-link">
                                     <i class="nav-icon fas fa-edit"></i>
                                     <p>Course Management</p>
                                 </a>
@@ -167,7 +185,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./10.3.html" class="nav-link">
+                                <a href="10.3.html" class="nav-link">
                                     <i class="nav-icon far fa-calendar-alt"></i>
                                     <p>Intake Creation</p>
                                 </a>
@@ -179,7 +197,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.12.html" class="nav-link">
                                     <i class="nav-icon fas fa-credit-card"></i>
                                     <p>Overall Payment</p>
                                 </a>
@@ -191,25 +209,25 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.15.html" class="nav-link">
                                     <i class="nav-icon fa fa-percent"></i>
                                     <p>Exam Results</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.14.html" class="nav-link">
                                     <i class="nav-icon fa fa-calendar-check"></i>
                                     <p>Attendance</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.16.html" class="nav-link">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p>Student Lists</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.13.html" class="nav-link">
                                     <i class="nav-icon fa fa-table"></i>
                                     <p>Time Tables</p>
                                 </a>
@@ -256,20 +274,18 @@
                 </div>
             </div>
         </div>
-        <section>
-            <div class="container">
-                <div class="custom-payment-section custom-section">
-                    <div class="form-group row">
-                        <!-- Student NIC -->
-                        <label for="inputBatchSize" class="col-sm-2 col-form-label">Student NIC</label>
-                        <div class="col-sm-5">
-                            <input type="text" class="form-control" id="inputBatchSize" placeholder="Enter Student ID(NIC)">
-                        </div>
+        <div class="container">
+            <div class="custom-payment-section custom-section">
+                <div class="form-group row">
+                    <!-- Student NIC -->
+                    <label for="inputBatchSize" class="custom-label-padding">Student NIC</label>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control custom-textbox-margin" id="inputBatchSize" placeholder="Enter Student ID(NIC)" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                     </div>
-                    <!-- Continue with other form groups or content -->
                 </div>
+                <!-- Continue with other form groups or content -->
             </div>
-        </section>
+        </div>
             
         <section class="content custom-width custom-background-section">
             <div class="container">
@@ -277,20 +293,20 @@
                 <form>
                     <br>
                         <div class="form-group row">
-                            <label for="inputNameWithInitials" class="col-sm-2 col-form-label">Name</label>
+                            <label for="inputNameWithInitials" class="col-sm-2 col-form-label label1-space">Name</label>
                             <div class="col-sm-5"> <!-- Adjusted width -->
                                 <input type="text" class="form-control" id="inputNameWithInitials" placeholder="J P Kodithuwakku">
                             </div>
                         </div>
                     
                         <div class="form-group row">
-                            <label for="inputNameWithInitials" class="col-sm-2 col-form-label">NIC</label>
+                            <label for="inputNameWithInitials" class="col-sm-2 col-form-label label1-space">NIC</label>
                             <div class="col-sm-5"> <!-- Adjusted width -->
                                 <input type="text" class="form-control" id="inputNameWithInitials" placeholder="Janani Parindya">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="dropdown2" class="col-sm-2 col-form-label">O/L Exam</label>
+                            <label for="dropdown2" class="col-sm-2 col-form-label label1-space">O/L Exam</label>
                             <div class="col-sm-2">
                                 <input type="tel" class="form-control" id="inputHome" placeholder="LOCAL">
                             </div>
@@ -301,113 +317,115 @@
                             </div>
                         </div>
                
-                        <div class="form-group row align-items-center">
-                            <label for="dropdownMaths" class="col-sm-2 col-form-label text-center">Maths</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownMaths" name="dropdownMaths">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group row align-items-center">
-                            <label for="dropdownEnglish" class="col-sm-2 col-form-label text-center">English</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownEnglish" name="dropdownEnglish">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group row">
-                            <label for="dropdownMaths" class="col-sm-2 col-form-label text-center">Science</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownMaths" name="dropdownMaths">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                        </div>
-        
-                        <div class="form-group row">
-                            <label for="dropdownEnglish" class="col-sm-2 col-form-label text-center">History</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownEnglish" name="dropdownEnglish">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="dropdownMaths" class="col-sm-2 col-form-label text-center">Religion</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownMaths" name="dropdownMaths">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                        </div>
-        
-                        <div class="form-group row">
-                            <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Nation</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownNation" name="dropdownNation">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Commerce</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownNation" name="dropdownNation">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="dropdownNation" class="col-sm-2 col-form-label text-center">ICT</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownNation" name="dropdownNation">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="dropdownNation" class="col-sm-2 col-form-label text-center">English Literature</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownNation" name="dropdownNation">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="dropdown2" class="col-sm-2 col-form-label">A/L Exam</label>
+                        <div class="form-group row" style="margin-left: 80px;">
+                            <label for="dropdownNation" class="col-sm-2 col-form-label">Maths</label>
                             <div class="col-sm-2">
-                                <input type="tel" class="form-control" id="inputHome" placeholder="LOCAL">
+                                <select class="form-control short-dropdown" id="dropdownMaths" name="dropdownMaths" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row " style="margin-left: 80px;">
+                            <label for="dropdownEnglish" class="col-sm-2 col-form-label">English</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownEnglish" name="dropdownEnglish" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row" style="margin-left: 80px;">
+                            <label for="dropdownMaths" class="col-sm-2 col-form-label label">Science</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownMaths" name="dropdownMaths" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="form-group row" style="margin-left: 80px;">
+                            <label for="dropdownEnglish" class="col-sm-2 col-form-label label">History</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownEnglish" name="dropdownEnglish" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row" style="margin-left: 80px;">
+                            <label for="dropdownMaths" class="col-sm-2 col-form-label label">Religion</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownMaths" name="dropdownMaths" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="form-group row" style="margin-left: 80px;">
+                            <label for="dropdownNation" class="col-sm-2 col-form-label label">Nation</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownNation" name="dropdownNation" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row" style="margin-left: 80px;">
+                            <label for="dropdownNation" class="col-sm-2 col-form-label label">Commerce</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownNation" name="dropdownNation" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row" style="margin-left: 80px;">
+                            <label for="dropdownNation" class="col-sm-2 col-form-label label">ICT</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownNation" name="dropdownNation" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div> 
+                        <div class="form-group row" style="margin-left: 80px;">
+                            <label for="dropdownNation" class="col-sm-2 col-form-label label">English Literature</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownNation" name="dropdownNation" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group row">
+                            <label for="dropdown2" class="col-sm-2 col-form-label label1-space">A/L Exam</label>
+                            <div class="col-sm-2">
+                                <input type="tel" class="form-control" id="inputHome" value="LOCAL">
                             </div>
 
                             <label for="inputHome" class="col-sm-2 col-form-label text-sm-right">Year</label>
@@ -417,12 +435,10 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="dropdownStream" class="col-sm-2 col-form-label">Stream</label>
-                            <div class="col-sm-2">
-                                <select class="form-control" id="dropdownStream" name="dropdownStream" onchange="updateStreamText()">
-                                    <option value="physicalScience">Physical Science</option>
-                                    <!-- Add more stream options as needed -->
-                                </select>
+                            <label for="dropdownStream" class="col-sm-2 col-form-label label1-space">Stream</label>
+                            <div class=" custom-textbox">
+                                <input type="text" class="form-control" id="dropdownStream" name="dropdownStream" value="Physical Science">
+                            </div>
                             </div>
                         </div>
                         <script>
@@ -437,9 +453,9 @@
                         </script>
 
                                 <div class="form-group row">
-                                    <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Combiined Maths</label>
-                                    <div class="col-sm-1">
-                                        <select class="form-control" id="dropdownNation" name="dropdownNation">
+                                    <label for="dropdownNation" class="col-sm-2 col-form-label">Combiined Maths</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control short-dropdown" id="dropdownNation" name="dropdownNation">
                                             <option>A</option>
                                             <option>B</option>
                                             <option>C</option>
@@ -448,9 +464,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Physics</label>
-                                    <div class="col-sm-1">
-                                        <select class="form-control" id="dropdownNation" name="dropdownNation">
+                                    <label for="dropdownNation" class="col-sm-2 col-form-label label-space">Physics</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control short-dropdown" id="dropdownNation" name="dropdownNation">
                                             <option>A</option>
                                             <option>B</option>
                                             <option>C</option>
@@ -459,9 +475,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Chemistry</label>
-                                    <div class="col-sm-1">
-                                        <select class="form-control" id="dropdownNation" name="dropdownNation">
+                                    <label for="dropdownNation" class="col-sm-2 col-form-label label-space">Chemistry</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control short-dropdown" id="dropdownNation" name="dropdownNation">
                                             <option>A</option>
                                             <option>B</option>
                                             <option>C</option>
@@ -469,8 +485,7 @@
                                         </select>
                                     </div>
                                 </div>
-                                <br>
-                               
+                            <br>   
                 </form>       
         </section>
         <br>
@@ -482,7 +497,7 @@
                         <div class="form-group row">
                             <label for="dropdownCourse" class="col-sm-2 col-form-label">Course</label>
                             <div class="col-sm-5"> <!-- Adjusted width to be as wide as Batch Size and Location -->
-                                <select class="form-control select2" id="dropdownCourse" name="dropdownCourse">
+                                <select class="form-control select2" id="dropdownCourse" name="dropdownCourse" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                                     <option selected="selected">Pearson BTEC Digital Technologies</option>
                                     <!-- Add more options as needed -->
                                     <option>Another Course</option>
@@ -512,14 +527,14 @@
                             <div class="form-group row">
                                 <label for="inputEndDate" class="col-sm-2 col-form-label">Date</label>
                                 <div class="col-sm-3">
-                                    <input type="date" class="form-control" id="inputEndDate">
+                                    <input type="date" class="form-control" id="inputEndDate" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <!-- Batch Size -->
                                 <label for="inputBatchSize" class="col-sm-2 col-form-label">Registration Fee</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="inputBatchSize">
+                                    <input type="text" class="form-control" id="inputBatchSize" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                                 </div>
                             </div>
 <br>
@@ -535,7 +550,7 @@
                         <!-- Batch Size -->
                         <label for="inputBatchSize" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" id="inputBatchSize">
+                            <input type="text" class="form-control" id="inputBatchSize" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                         </div>
                     </div>
 
@@ -543,11 +558,10 @@
                         <!-- Batch Size -->
                         <label for="inputBatchSize" class="col-sm-2 col-form-label">Service No</label>
                         <div class="col-sm-5">
-                            <input type="text" class="form-control" id="inputBatchSize">
+                            <input type="text" class="form-control" id="inputBatchSize" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
                         </div>
                     </div>
 
-                    <br>
                     <br>
                     <!-- Marketing Survey sentence -->
                         <p><b>Marketing Survey</b></p>
@@ -610,13 +624,13 @@
                     </div>
         <div class="row justify-content-center mt-4">
             <div class="col-sm-2">
-                <button type="submit" class="btn btn-danger btn-lg btn-block">Register</button>
+                <button type="submit" class="btn btn-danger btn-lg btn-block" style="width: 130px; border-radius: 15px; font-weight: bold;">Register</button>
             </div>
         </div>
         <br>
         <div class="row justify-content-center mt-2"> <!-- Adjusted margin-top -->
             <div class="col-sm-3">
-                <button type="button" class="btn btn-primary btn-lg btn-block" style="border-radius: 20px; color: black; font-weight: bold;">Check Eligibility<span class="arrow">&rarr;</span></button> <!-- Changed button color to blue -->
+                <button type="button" class="btn btn-primary btn-lg btn-block" style="border-radius: 15px; color: black; font-weight: bold;">Check Eligibility<span class="arrow">&rarr;</span></button> <!-- Changed button color to blue -->
             </div>
         </div>
     <!-- jQuery -->

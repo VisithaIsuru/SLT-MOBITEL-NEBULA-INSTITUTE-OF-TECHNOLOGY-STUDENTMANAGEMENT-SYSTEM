@@ -52,7 +52,7 @@
         </nav>
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar elevation-4" style="background-color:#DADEFF; height: 150vh;">
+        <aside class="main-sidebar elevation-4" style="background-color:#DADEFF;         height: 250vh;">
 
             <!-- Sidebar -->
             <div class="sidebar">
@@ -185,143 +185,216 @@
         </aside>
     </div>
 
+    <!--Content Wrapper. Contains page content-->
     <div class="content-wrapper navbar-white">
-        <!-- Content Header (Page header) -->
         <div class="content-header">
-          <div class="container-fluid">
-            <div class="row mb-2">
-              <div class="col-12 p-4 text-center">
-                <h1 class="m-0 font-weight-bold">Course Management</h1>
-              </div>
-            </div>
-          </div>
-        </div>
-
-          <!-- /.content-header -->
-    <section class="content custom-width">
-        <div class="container">
-          <div class="col-md-10 mx-auto">
-              <form class="mb-4">
-                  <!-- Your form fields go here -->
-
-                  <div class="form-group row">
-                    <label for="dropdown1" class="col-sm-3 col-form-label">Location</label>
-                    <div class="col-sm-9">
-                      <select class="form-control" id="dropdown1" name="dropdown1" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                        <!-- Options for Dropdown 1 -->
-                        <option value="option1">Welisara</option>
-                        <option value="option2">Option 2</option>
-                        <!-- Add more options as needed -->
-                      </select>
+            <div class="content-fluid">
+                <div class="row mb-2">
+                    <div class="col-12 p-4 text-center">
+                        <h1 class="m-0 font-weight-bold">Overall Payment</h1>
                     </div>
-                  </div>
-      
-                  <div class="my-4"> <!-- Add margin utility class -->
-                      <!-- Form field for Student NIC -->
-                      
-
-                                  <div class="form-group row">
-                                    <!-- Batch Size -->
-                                    <label for="inputBatchSize" class="col-sm-3 col-form-label">Course ID</label>
-                                    <div class="col-sm-6">
-                                        <input type="text" class="form-control" id="inputBatchSize" placeholder="BTEc/DT">
-                                    </div>
-                                </div>
-
-                                <div class="form-group row mb-4" >
-                                    <label for="CourseName" class="col-sm-3 col-form-label font-weight-bold">Course Name</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" name="nic" id="nic" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                                </div>
-                                </div>
-
-                                <div class="form-group row mb-4" >
-                                    <label for="Duration" class="col-sm-3 col-form-label font-weight-bold">Duration</label>
-                                    <div class="col-sm-9">
-                                        <input type="text" class="form-control" name="nic" id="nic" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group row">
-                                                <label for="dropdown4" class="col-sm-3 col-form-label">Semester</label>
-                                                <div class="col-sm-3">
-                                                  <select class="form-control" id="dropdown4" name="dropdown4" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                                    <!-- Options for Dropdown 4 -->
-                                                    <option value="option1"></option>
-                                                    <option value="option2">Option 2</option>
-                                                    <!-- Add more options as needed -->
-                                                  </select>
-                                                </div>
-                                              </div>
-
-                                              <div class="form-group row">
-                                                <label for="dropdown4" class="col-sm-3 col-form-label">Modules</label>
-                                                <div class="col-sm-3">
-                                                  <select class="form-control" id="dropdown4" name="dropdown4" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                                    <!-- Options for Dropdown 4 -->
-                                                    <option value="option1">Core</option>
-                                                    <option value="option2">Option 2</option>
-                                                    <!-- Add more options as needed -->
-                                                  </select>
-                                                </div>
-                                              </div>
-
-                                              <div class="form-group row">
-                                                <label for="dropdown4" class="col-sm-3 col-form-label"></label>
-                                                <div class="col-sm-3">
-                                                    <input class="form-control" placeholder="Module ID" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <input class="form-control" placeholder="Programming" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                                </div>
-                                                <div class="col-sm-3">
-                                                    <button type="button" class="btn btn-secondary">Add</button>
-                                                </div>
-                                            </div>
-                                            
-                                    
-                                              </div>
-
-                                              <div class="form-group row mb-4" >
-                                                <label for="TrainingP" class="col-sm-3 col-form-label font-weight-bold">Training Period</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" class="form-control" name="nic" id="nic" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                                            </div>
-                                            </div>
-
-                                            <div class="form-group row mb-4" >
-                                                <label for="MinimumCE" class="col-sm-3 col-form-label font-weight-bold">Minimum Credits Earned</label>
-                                                <div class="col-sm-9">
-                                                    <input type="text" class="form-control" name="nic" id="nic" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                                            </div>
-                                            </div>
-
-                                        
-      
-                                  <div class="form-group row" style="margin-bottom: 55px;">
-                                      <label for="EntryQuli" class="col-sm-3 col-form-label font-weight-bold">Entry Qualifications</label>
-                                      <div class="col-sm-9">
-                                          <textarea class="form-control" name="issue" id="issue" rows="4" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);"></textarea>
-                                      </div>
-                                  </div>
-
-                                  <div class="row justify-content-center mt-4">
-                                    <button type="submit" class="btn btn-danger btn-lg btn-block" style="width: 130px; border-radius: 15px; font-weight: bold;">Save</button>
-                                </div>
-      
-      
-                            
-      
-                                
-      
-
-                      
-                         
-      
+                </div>
+            </div>
         </div>
-    </section>
+
+        <section class="content custom-width">
+            <div class="container">
+                <div class="col-md-10 mx-auto">
+                    <form class="mb-4">
+                        <!-- Form fields go here -->
+                        <div class="form-group row">
+                            <label for="dropdown1" class="col-sm-3 col-form-label">Location</label>
+                            <div class="col-sm-6">
+                            <select class="form-control" id="dropdown1" name="dropdown1" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                <!-- Options for Dropdown 1 -->
+                                <option value="option1">Welisara</option>
+                                <option value="option2">Option 2</option>
+                                <!-- Add more options as needed -->
+                            </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="dropdown2" class="col-sm-3 col-form-label">Course</label>
+                            <div class="col-sm-9">
+                              <select class="form-control" id="dropdown2" name="dropdown2" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                <!-- Options for Dropdown 2 -->
+                                <option selected="selected">Pearson BTECH Digital Technologies</option>
+                                <option value="option1">example 01</option>
+                                <option value="option2">example 02</option>
+                                <!-- Add more options as needed -->
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label for="dropdown3" class="col-sm-3 col-form-label">Batch/Intake</label>
+                            <div class="col-sm-3">
+                              <select class="form-control" id="dropdown3" name="dropdown3" style="background-color: #FFF6F6; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                <!-- Options for Dropdown 3 -->
+                                <option selected="selected">23-1</option>
+                                <option value="option1"></option>
+                                <option value="option2">Option 2</option>
+                                <!-- Add more options as needed -->
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="form-group row">
+                            <label for="dropdown4" class="col-sm-3 col-form-label">Type</label>
+                            <div class="col-sm-3">
+                              <select class="form-control" id="dropdown4" name="dropdown4" style="background-color: #FFF6F6; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                <!-- Options for Dropdown 4 -->
+                                <option selected="selected">Franchise</option>
+                                <option value="option1"></option>
+                                <option value="option2">Option 2</option>
+                                <!-- Add more options as needed -->
+                              </select>
+                            </div>
+                          </div>
+                        
+
+                        
+                    </form>
 
 
+                </div>
+                
+      
+                
+      
+                
+      
+                
+              </form>
+            </div>
+          </section>
+
+          <section class="content">
+            <div class=" mx-auto d-flex align-items-center justify-content-center">
+                
+ <!-- Additional Section for a Table -->
+
+                    
+                <div class="col-md-12">
+                    <div class="row mt-3">
+                        <div class="col-12">
+                            <h5></h5>
+                        </div>
+                    </div>
+                    
+                    <div class="table-responsive">
+                        <table class="table table-bordered text-center" style="background-color: #D9D9D9; border: 1px solid black;">
+                            <thead>
+                                <tr>
+                                    <th style="border: 1px solid black;">Student ID</th>
+                                    <th style="border: 1px solid black;">Reg Fee</th>
+                                    <th style="border: 1px solid black;">1st</th>
+                                    <th style="border: 1px solid black;">2nd</th>
+                                    <th style="border: 1px solid black;">3rd</th>
+                                    <th style="border: 1px solid black;">4th</th>
+                                    <th style="border: 1px solid black;">5th</th>
+                                    <!-- Add more columns as needed -->
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- First Row -->
+                                <tr>
+                                    <td style="border: 1px solid black;">DT/23/WE/001</td>
+                                    <td style="border: 1px solid black;">1</td>
+                                    <td style="border: 1px solid black;">1</td>
+                                    <td style="border: 1px solid black;">1</td>
+                                    <td style="border: 1px solid black;">1</td>
+                                    <td style="border: 1px solid black;">1</td>
+                                    <td style="border: 1px solid black;">0</td>
+                                    <!-- Add more cells as needed -->
+                                </tr>
+                    
+                                <!-- Second Row -->
+                                <tr>
+                                    <td style="border: 1px solid black;">DT/23/WE/001</td>
+                                    <td style="border: 1px solid black;">1</td>
+                                    <td style="border: 1px solid black;">0</td>
+                                    <td style="border: 1px solid black;">0</td>
+                                    <td style="border: 1px solid black;">1</td>
+                                    <td style="border: 1px solid black;">1</td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <!-- Add more cells as needed -->
+                                </tr>
+
+                                <tr>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <!-- Add more cells as needed -->
+                                </tr>
+
+                                <tr>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <!-- Add more cells as needed -->
+                                </tr>
+
+                                <tr>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <!-- Add more cells as needed -->
+                                </tr>
+
+                                <tr>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <td style="border: 1px solid black;"></td>
+                                    <!-- Add more cells as needed -->
+                                </tr>
+
+
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    
+                </div>
+        
+              
+    </div>
+</section>
+<div class="card-body pad tabel-responsive">
+    <div class="col-md-3">
+        <tr>
+            <td>
+                <button type="button" class="btn btn-block btn-danger" >Late Payment Calculation</button>
+              </td>
+        </tr>
+    </div>
+</div>
+
+        
+
+        
+        
+
+
+    </div>
 
     <!--form start-->
         
@@ -354,7 +427,7 @@
     <script src="assets/js/adminlte.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     <script src="assets/js/pages/dashboard.js"></script>
-    <!-- AdminLTE for demo purposes -->
+
   
 
   </body>

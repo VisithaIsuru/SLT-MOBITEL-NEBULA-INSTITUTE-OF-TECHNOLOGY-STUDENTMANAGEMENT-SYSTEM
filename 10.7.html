@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Nebula Institute</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="assets/css/adminlte.min.css">
+
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+  <style>
+
+/* mada box eke */
+  #main-div{
+  width:100%;
+  min-height: 990px;
+  }
+
+  #box{
+  background-color: white;
+  width: 75%;
+  border: 12px lightgray;
+  padding:40px;
+  margin: 15px;
+  float: right;
+  min-height: 990px;
+  border-radius:8px;
+  }
+
+ .clearfix::after
+  {
+  content:"";
+  display:block;
+  clear:both ;
+  }
+
+#padding{
+  border: 1px solid black white;
+  background-color: white;
+  padding-top: 13px;
+  padding-right:6px;
+  padding-bottom: 11px;
+  padding-left: 6px;
+    border-radius:8px;
+}
+
+.wrapper rounded bg-white .col-8{
+height: 1800px;
+}
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.select-wrapper select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-right: 25px; /* Adjust as needed */
+}
+
+.select-wrapper::after {
+  content: '\25BC'; /* Unicode for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px; /* Adjust as needed */
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 0.8rem; /* Adjust the font size as needed */
+}
+
+.btn-equal-width {
+    width: 100px; /* Adjust the width as needed */
+}
+
+
+  </style>
+  </head>
+  <body class="hold-transition sidebar-mini ">
+  <div class="wrapper">
+  <!-- Navbar -->
+  <!--Navbar-->
+  <nav class="main-header navbar navbar-expand navber-white navbar-light">
+    <!--Left navbar links-->
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+    </ul>
+    <h2>NEBULA INSTITUTE OF TECHNOLOGY</h2>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <img style="width: 200px;" src="assets/img/logo_nebula.png" alt="">
+        </li>
+    </ul>
+</nav>
+
+  <!-- /.navbar -->
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar elevation-4" style="background-color:#DADEFF; height: 590vh;">
+  <!-- Brand Logo -->
+  <!-- Sidebar -->
+  <div class="sidebar">
+  <!-- Sidebar user panel (optional) -->
+  <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+  <!-- Sidebar Menu -->
+  <nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+            with font-awesome or any other icon font library -->
+            <li class="nav-item has-treeview menu-open">
+                <a href="10.4.html" class="nav-link">
+                    <i class="nav-icon fas fa-user-alt"></i>
+                    <p>Student Registration</p>
+                </a>
+ 
+            </li>
+        <li class="nav-item">
+            <a href="10.5.html" class="nav-link">
+                <i class="nav-icon fas fa-graduation-cap"></i>
+                <p>Course Registration</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="10.6.html" class="nav-link">
+                <i class="nav-icon fa fa-check-square"></i>
+                <p>Eligibility & Registration</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="10.7.html" class="nav-link">
+                <i class="nav-icon fa fa-id-badge"></i>
+                <p>Student Profile</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="./10.8.html" class="nav-link">
+                <i class="nav-icon fas fa-address-card"></i>
+                <p>Student Other Information</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="./10.5.html" class="nav-link">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>Course Management</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="./10.9.html" class="nav-link">
+                <i class="nav-icon fas fa-table"></i>
+                <p>Module Management</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="10.3.html" class="nav-link">
+                <i class="nav-icon far fa-calendar-alt"></i>
+                <p>Intake Creation</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="./10.10.html" class="nav-link">
+                <i class="nav-icon far fa-credit-card"></i>
+                <p>Payement</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="10.12.html" class="nav-link">
+                <i class="nav-icon fas fa-credit-card"></i>
+                <p>Overall Payment</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="./10.11.html" class="nav-link">
+                <i class="nav-icon fas fa-calculator"></i>
+                <p>Late Payment Calculation</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="10.15.html" class="nav-link">
+                <i class="nav-icon fa fa-percent"></i>
+                <p>Exam Results</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="10.14.html" class="nav-link">
+                <i class="nav-icon fa fa-calendar-check"></i>
+                <p>Attendance</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="10.16.html" class="nav-link">
+                <i class="nav-icon fas fa-users"></i>
+                <p>Student Lists</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="10.13.html" class="nav-link">
+                <i class="nav-icon fa fa-table"></i>
+                <p>Time Tables</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>Clearance Form</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>Dashboard</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">
+                <i class="nav-icon fa fa-user-circle"></i>
+                <p>Admin Profile</p>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">
+                <i class="nav-icon fas fa-sign-out-alt"></i>
+                <p>Logout</p>
+            </a>
+        </li>
+    </ul>
+</nav>
+      <!-- /.sidebar-menu -->
+    </div>
+  </div>
+</div>
+    
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+  <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+  <!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+
+<!--Main Div-->
+<div id="main-div">
+<div id="box" class="input">
+<div class="form-group">
+<form action="#" class="form">
+<div class="input-box">
+<div class="wrapper">
+<div id="padding">
+<div class="col-30">
+
+
+<div class="wrapper">
+<div id="padding">
+<div class="col-30">
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">NIC</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="2002458564">
+                </div>
+            </div>
+    
+            <div class="form-group row">
+                <label for="dropdownCourse" class="col-sm-4 col-form-label">Course</label>
+                <div class="col-sm-8">
+                    <div class="select-wrapper">
+                        <select class="form-control select2" id="dropdownCourse" name="dropdownCourse">
+                            <option selected="selected">Pearson BTEC Digital Technologies</option>
+                            <option>Another Course</option>
+                        </select>
+                        <span class="arrow"></span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Student Number</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="DI/23/WI/001">
+                </div>
+            </div>
+    
+            <div class="form-group row">
+                <label for="inputEmail3" class="col-sm-4 col-form-label">Registration Type</label>
+                <div class="col-sm-8">
+                    <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="">
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6">
+            <div class="col-12">
+                <h4 class="text-center font-weight-bold">Student Profile</h4>
+                <img src="assets/img/user.svg" class="rounded mx-auto d-block" alt="OIP" width="60" height="95">
+                <div class="text-center mt-3">
+                    <button type="button" class="btn btn-warning mb-2 btn-equal-width">Edit</button><br>
+                    <button type="button" class="btn btn-danger mb-2 btn-equal-width">Save</button><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-12">
+            <div class="hstack gap-3 text-left">
+                <div class="bg-white font-weight-bold">Personal</div>
+                <div class="vr"></div>
+                <div class="bg-white font-weight-bold">Guardian</div>
+                <div class="vr"></div>
+                <div class="bg-white font-weight-bold">Payment</div>
+                <div class="vr"></div>
+                <div class="bg-white font-weight-bold">Exam</div>
+                <div class="vr"></div>
+                <div class="bg-white font-weight-bold">Attendance</div>
+            </div>
+        </div>
+    </div>
+    <hr class="bg-secondary my-4">
+    
+    
+    <!--Personal details................................................................................................-->
+    <p class="h5 form-group row text-left col-5 font-weight-bold" style="color:#000099">Personal Details</p>
+    <hr class="bg-secondary my-4">
+    
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-4 col-form-label">Name</label>
+        <div class="col-md-5">
+            <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="">
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-4 col-form-label">NIC</label>
+        <div class="col-md-5">
+            <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="">
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-4 col-form-label">DOB</label>
+        <div class="col-md-5">
+            <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="">
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-4 col-form-label">Email</label>
+        <div class="col-md-5">
+            <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="">
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-4 col-form-label">Telephone</label>
+        <div class="col-md-5">
+            <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="Mobile">
+            <br>
+            <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="Home">
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-4 col-form-label">Address</label>
+        <div class="col-md-5">
+            <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="">
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-4 col-form-label">Special Needs</label>
+        <div class="col-md-5">
+            <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="">
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-4 col-form-label">Extra Curricular Activities</label>
+        <div class="col-md-5">
+            <textarea class="form-control text-bg-light text-white" rows="2" id="comment"></textarea>
+        </div>
+    </div>
+    
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-4 col-form-label">Future Potential</label>
+        <div class="col-md-5">
+            <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="">
+        </div>
+    </div>
+    
+    <!-- Parent/Guardian Details -->
+    <div class="row mt-3">
+        <div class="col-md-12">
+            <p class="h5 form-group row text-left col-md-5 font-weight-bold" style="color: #000099;">Parent/Guardian Details</p>
+        </div>
+    </div>
+    <hr class="bg-secondary">
+    
+<br>
+
+<div class="form-group row">
+    <label for="inputEmail3" class="col-md-4 col-form-label">Parent/Guardian Name</label>
+    <div class="col-md-5">
+        <input type="email" class="form-control input-sm text-bg-light text-white" id="inputEmail3" placeholder="">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="inputEmail3" class="col-md-4 col-form-label">Contact</label>
+    <div class="col-md-5">
+        <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="">
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="comment" class="col-md-4 col-form-label">Address</label>
+    <div class="col-md-5">
+        <textarea class="form-control text-bg-light text-white" rows="2" id="comment"></textarea>
+    </div>
+</div>
+
+<div class="form-group row">
+    <label for="inputEmail3" class="col-md-4 col-form-label">Emergency Contact No</label>
+    <div class="col-md-5">
+        <input type="email" class="form-control text-bg-light text-white" id="inputEmail3" placeholder="">
+    </div>
+</div>
+
+<br>
+<!--payment details.......................................................................................-->
+<div class="row mt-3">
+<div class="col-12 ">
+<p class="h5 form-group row text-left col-5 font-weight-bold" style="color:#000099">Payment Details</p>
+</div>
+</div>
+<hr class="bg-secondary ">
+
+  <div class="col-md-12">
+  <div class="row mt-3">
+  <div class="col-12">
+  <h6 class="font-weight-bold">Franchise Payment</h6></div></div>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" class="text-center">Installment</th>
+                <th scope="col" class="text-center">Amount</th>
+                <th scope="col" class="text-center">Due Date</th>
+                <th scope="col" class="text-center">Receipt No</th>
+                <th scope="col" class="text-center">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1st Installment</td>
+                <td>Rs.25,000</td>
+                <td>2020-08-24</td>
+                <td>18055</td>
+                <td>Paid</td>
+            </tr>
+            <tr>
+                <td>2nd Installment</td>
+                <td>Rs.25,000</td>
+                <td>2020-08-24</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3rd Installment</td>
+                <td>Rs.25,000</td>
+                <td>2020-08-24</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4th Installment</td>
+                <td>Rs.25,000</td>
+                <td>2020-08-24</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+          </div>
+
+<div class="col-md-12">
+<div class="row mt-3">
+<div class="col-12">
+<h6 class="font-weight-bold">Course Fee</h6>
+</div></div>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" class="text-center">Type</th>
+                <th scope="col" class="text-center">Amount</th>
+                <th scope="col" class="text-center">Due Date</th>
+                <th scope="col" class="text-center">Receipt No</th>
+                <th scope="col" class="text-center">Status</th>
+                <th scope="col" class="text-center">Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>First installment</td>
+                <td>Rs.25,000</td>
+                <td>2020-08-24</td>
+                <td>18055</td>
+                <td>Paid</td>
+                <td>with late payment</td>
+            </tr>
+            <tr>
+                <td>Second Installment</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>   
+</div>
+</section>
+
+<div class="col-md-12">
+<div class="row mt-3">
+<div class="col-12">
+<h6 class="font-weight-bold">Other Payment</h6>
+</div></div>
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" class="text-center">Type</th>
+                <th scope="col" class="text-center">Amount</th>
+                <th scope="col" class="text-center">Due Date</th>
+                <th scope="col" class="text-center">Receipt No</th>
+                <th scope="col" class="text-center">Status</th>
+                <th scope="col" class="text-center">Comment</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Registration Fee</td>
+                <td>Rs.10,000</td>
+                <td>2020-08-24</td>
+                <td>180586</td>
+                <td>Paid</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Library Fee</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>   
+</div>
+</section>
+
+<div class="container">
+    <div class="row justify-content-end mt-4">
+        <div class="col-md-6 col-lg-3"> <!-- Adjust the column width for different screen sizes -->
+            <button type="submit" class="btn btn-danger btn-lg btn-block" style="border-radius: 15px; font-weight: bold;">Generate PDF</button>
+        </div>
+    </div>
+</div>
+
+
+ <div class="row mt-3">
+<div class="col-12 ">
+<p class="h5 form-group row text-left col-5 font-weight-bold text-black" >Exam Details</p>
+</div>
+</div>
+
+<hr class="bg-secondary my-4">
+
+
+<div class="form-group row">
+    <label for="dropdownCourse" class="col-2 col-form-label">Semester</label>
+    <div class="col-sm-3">
+        <div class="select-wrapper">
+            <select class="form-control select2" id="dropdownCourse" name="dropdownCourse" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center;">
+                <option selected="selected">1</option>
+                <option>Another Course</option>
+            </select>
+            <span class="arrow"></span>
+        </div>
+    </div>
+</div>
+
+<br><br>
+<form>
+<div class="form-group row">
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">Module Code</th>
+                    <th scope="col" class="text-center">Module Name</th>
+                    <th scope="col" class="text-center">Grade</th>
+                    <th scope="col" class="text-center">Overall Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PBLO5</td>
+                    <td>Programming</td>
+                    <td>A</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>PBLO5</td>
+                    <td>Cyber security</td>
+                    <td>A</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>PBLO5</td>
+                    <td>Security</td>
+                    <td>A</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</div>   
+</div>
+
+
+
+<div class="row mt-3">
+<div class="col-12 ">
+<p class="h5 form-group row text-left col-5 font-weight-bold text-black" >Payment Details</p>
+</div>
+</div>
+<hr class="bg-secondary my-4">
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" class="text-center">Course Name</th>
+                <th scope="col" class="text-center">January</th>
+                <th scope="col" class="text-center">February</th>
+                <th scope="col" class="text-center">March</th>
+                <th scope="col" class="text-center">Average</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Module 1</td>
+                <td>80%</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Module 2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>PBLO5</td>
+                <td>Security</td>
+                <td>A</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>   
+</div>
+
+
+<div class="row mt-3">
+<div class="col-12 ">
+<p class="h5 form-group row text-left col-5 font-weight-bold text-black" >Clearance Status</p>
+</div>
+</div>
+<hr class="bg-secondary my-4">
+
+<div class="table-responsive">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col" class="text-center">Library</th>
+                <th scope="col" class="text-center">Cleared</th>
+                <th scope="col" class="text-center">Admin</th>
+                <th scope="col" class="text-center">Service No</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Payment</td>
+                <td>Pending</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Hostel</td>
+                <td>Pending</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</div>   
+</div>
+
+<br>
+
+
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-md-6">
+            <p class="h5 form-group row text-left font-weight-bold text-black">Certificate</p>
+        </div>
+    </div>
+    <hr class="bg-secondary my-4">
+
+    <div class="form-group row">
+        <label for="inputEmail3" class="col-md-4 col-form-label">Certificate/Document Name</label>
+        <div class="col-md-6">
+            <div class="input-group">
+                <input type="email" class="form-control text-bg-light text-white mr-5" id="inputEmail3" placeholder="">
+                <button type="submit" class="btn btn-secondary" style="border-radius: 15px; font-weight: bold; color: black;">Attach File</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-responsive"> <!-- Add table-responsive class for responsiveness -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col" class="text-center">Certificate Name</th>
+                    <th scope="col" class="text-center">Action</th> <!-- Adjusted column name -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit" class="btn btn-secondary" style="border-radius: 15px; font-weight: bold; color: black;">Download</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</div>   
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
+

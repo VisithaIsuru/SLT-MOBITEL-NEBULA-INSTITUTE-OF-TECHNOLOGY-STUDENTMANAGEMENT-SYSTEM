@@ -31,11 +31,11 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
     <link rel="stylesheet" href="assets/css/style.css">
-
     <style>
         /* Add a gray background color to the specified section */
         .custom-background-section {
             background-color: #f2f2f2; /* You can adjust the color as needed */
+            width: 1000px;
         }
 
         .card-body h5 {
@@ -89,7 +89,16 @@
         .form-check {
             margin-left: 0;
         }
-
+        .label-space {
+        margin-left: 40px; /* Adjust the margin as needed */
+    }
+    .short-dropdown {
+        width: 75%; /* Adjust the width as needed */
+    }
+    .custom-column {
+        flex: 0 0 40px; /* Adjust the width as needed */
+        max-width: 40px; /* Adjust the max-width as needed */
+    }
     </style>
 </head>
   <body class="hold-transition sidebar-mini">
@@ -112,8 +121,7 @@
         </nav>
 
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar elevation-4" style="background-color:#DADEFF;         height: 420vh;
-        ">
+        <aside class="main-sidebar elevation-4" style="background-color:#DADEFF; height: 460vh">
 
             <!-- Sidebar -->
             <div class="sidebar">
@@ -124,7 +132,6 @@
                         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                             <!-- Add icons to the links using the .nav-icon class
                                 with font-awesome or any other icon font library -->
-                 
                                 <li class="nav-item has-treeview menu-open">
                                     <a href="10.4.html" class="nav-link">
                                         <i class="nav-icon fas fa-user-alt"></i>
@@ -133,19 +140,19 @@
                      
                                 </li>
                             <li class="nav-item">
-                                <a href="./10.5.html" class="nav-link">
+                                <a href="10.5.html" class="nav-link">
                                     <i class="nav-icon fas fa-graduation-cap"></i>
                                     <p>Course Registration</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.6.html" class="nav-link">
                                     <i class="nav-icon fa fa-check-square"></i>
                                     <p>Eligibility & Registration</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.7.html" class="nav-link">
                                     <i class="nav-icon fa fa-id-badge"></i>
                                     <p>Student Profile</p>
                                 </a>
@@ -157,7 +164,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="./10.5.html" class="nav-link">
                                     <i class="nav-icon fas fa-edit"></i>
                                     <p>Course Management</p>
                                 </a>
@@ -169,7 +176,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./10.3.html" class="nav-link">
+                                <a href="10.3.html" class="nav-link">
                                     <i class="nav-icon far fa-calendar-alt"></i>
                                     <p>Intake Creation</p>
                                 </a>
@@ -181,7 +188,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.12.html" class="nav-link">
                                     <i class="nav-icon fas fa-credit-card"></i>
                                     <p>Overall Payment</p>
                                 </a>
@@ -193,25 +200,25 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.15.html" class="nav-link">
                                     <i class="nav-icon fa fa-percent"></i>
                                     <p>Exam Results</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.14.html" class="nav-link">
                                     <i class="nav-icon fa fa-calendar-check"></i>
                                     <p>Attendance</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.16.html" class="nav-link">
                                     <i class="nav-icon fas fa-users"></i>
                                     <p>Student Lists</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">
+                                <a href="10.13.html" class="nav-link">
                                     <i class="nav-icon fa fa-table"></i>
                                     <p>Time Tables</p>
                                 </a>
@@ -319,7 +326,7 @@
 
                     <div class="form-group row">
                         <div class="col-sm-5">
-                            <select class="form-control" id="nicDropdown" name="nicDropdown" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <select class="form-control" id="nicDropdown" name="nicDropdown">
                                 <option selected="selected">NIC No</option>
                                 <!-- Add more options as needed -->
                                 <option>NIC Type 1</option>
@@ -361,7 +368,7 @@
                         <div class="form-group row">
                             <label for="dropdown2" class="col-sm-2 col-form-label">O/L Exam</label>
                             <div class="col-sm-2">
-                                <select class="form-control select2" id="dropdown2" name="dropdown2" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                <select class="form-control select2" id="dropdown2" name="dropdown2">
                                     <option selected="selected">Local</option>
                                     <option>23-2</option>
                                     <option>23-3</option>
@@ -377,22 +384,10 @@
                             </div>
                         </div>
                
-                        <div class="form-group row align-items-center">
-                            <label for="dropdownMaths" class="col-sm-2 col-form-label text-center">Maths</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownMaths" name="dropdownMaths" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group row align-items-center">
-                            <label for="dropdownEnglish" class="col-sm-2 col-form-label text-center">English</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownEnglish" name="dropdownEnglish" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                        <div class="form-group row">
+                            <label for="dropdownNation" class="col-sm-2 col-form-label label-space">Maths</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownMaths" name="dropdownMaths">
                                     <option>A</option>
                                     <option>B</option>
                                     <option>C</option>
@@ -402,9 +397,22 @@
                         </div>
                         
                         <div class="form-group row">
-                            <label for="dropdownMaths" class="col-sm-2 col-form-label text-center">Science</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownMaths" name="dropdownMaths" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <label for="dropdownEnglish" class="col-sm-2 col-form-label label-space">English</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownEnglish" name="dropdownEnglish">
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="form-group row">
+                            <label for="dropdownMaths" class="col-sm-2 col-form-label label-space">Science</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownMaths" name="dropdownMaths">
                                     <option>A</option>
                                     <option>B</option>
                                     <option>C</option>
@@ -414,9 +422,9 @@
                         </div>
         
                         <div class="form-group row">
-                            <label for="dropdownEnglish" class="col-sm-2 col-form-label text-center">History</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownEnglish" name="dropdownEnglish" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <label for="dropdownEnglish" class="col-sm-2 col-form-label label-space">History</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownEnglish" name="dropdownEnglish">
                                     <option>A</option>
                                     <option>B</option>
                                     <option>C</option>
@@ -425,9 +433,9 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="dropdownMaths" class="col-sm-2 col-form-label text-center">Religion</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownMaths" name="dropdownMaths" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <label for="dropdownMaths" class="col-sm-2 col-form-label label-space">Religion</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownMaths" name="dropdownMaths">
                                     <option>A</option>
                                     <option>B</option>
                                     <option>C</option>
@@ -437,9 +445,9 @@
                         </div>
         
                         <div class="form-group row">
-                            <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Nation</label>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownNation" name="dropdownNation" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                            <label for="dropdownNation" class="col-sm-2 col-form-label label-space">Nation</label>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownNation" name="dropdownNation">
                                     <option>A</option>
                                     <option>B</option>
                                     <option>C</option>
@@ -448,63 +456,49 @@
                             </div>
                         </div>
                         
-                        <div class="form-group row">
-                            <div class="col-sm-2 offset-sm-1 text-center"> 
-                                <!-- Added offset to align "OP 1" with "Nation" -->
-                                <select class="form-control" id="dropdownOptions" name="dropdownOptions">
-                                    <option selected="selected">OP 1</option>
-                                    <option value="op1">Option 1</option>
-                                    <option value="op2">Option 2</option>
-                                    <option value="op3">Option 3</option>
+                        <div class="form-group row align-items-start">
+                            <div class="col-sm-0 custom-column"></div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" id="textOP1" name="textOP1" value="OP 1" readonly>
+                            </div>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownOptions" name="dropdownOptions">
+                                    <option selected="selected">A</option>
+                                    <option value="op2">B</option>
+                                    <option value="op3">C</option>
+                                    <option value="op3">D</option>
                                 </select>
                             </div>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownEnglish" name="dropdownEnglish" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
+                        </div>
+                        <div class="form-group row align-items-start">
+                            <div class="col-sm-0 custom-column"></div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" id="textOP1" name="textOP1" value="OP 2" readonly>
+                            </div>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownOptions" name="dropdownOptions">
+                                    <option selected="selected">A</option>
+                                    <option value="op2">B</option>
+                                    <option value="op3">C</option>
+                                    <option value="op3">D</option>
                                 </select>
                             </div>
                         </div>
                         
-                        <div class="form-group row">
-                            <div class="col-sm-2 offset-sm-1 text-center"> <!-- Added offset to align "OP 1" with "Nation" -->
-                                <select class="form-control" id="dropdownOptions" name="dropdownOptions">
-                                    <option selected="selected">OP 2</option>
-                                    <option value="op1">Option 1</option>
-                                    <option value="op2">Option 2</option>
-                                    <option value="op3">Option 3</option>
-                                </select>
+                        <div class="form-group row align-items-start">
+                            <div class="col-sm-0 custom-column"></div>
+                            <div class="col-sm-2">
+                                <input type="text" class="form-control" id="textOP1" name="textOP1" value="OP 3" readonly>
                             </div>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownEnglish" name="dropdownEnglish" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
+                            <div class="col-sm-2">
+                                <select class="form-control short-dropdown" id="dropdownOptions" name="dropdownOptions">
+                                    <option selected="selected">A</option>
+                                    <option value="op2">B</option>
+                                    <option value="op3">C</option>
+                                    <option value="op3">D</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <div class="col-sm-2 offset-sm-1 text-center"> <!-- Added offset to align "OP 1" with "Nation" -->
-                                <select class="form-control" id="dropdownOptions" name="dropdownOptions">
-                                    <option selected="selected">OP 3</option>
-                                    <option value="op1">Option 1</option>
-                                    <option value="op2">Option 2</option>
-                                    <option value="op3">Option 3</option>
-                                </select>
-                            </div>
-                            <div class="col-sm-1">
-                                <select class="form-control" id="dropdownEnglish" name="dropdownEnglish" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
-                                    <option>A</option>
-                                    <option>B</option>
-                                    <option>C</option>
-                                    <option>D</option>
-                                </select>
-                            </div>
-                        </div>
-
                         <div class="card-body">
                             <div class="form-group row">
                                 <div class="col-sm-12">
@@ -516,7 +510,7 @@
                                     <div class="col-sm-7">
                                         <input type="file" class="form-control-file visually-hidden" id="olCertificate" name="olCertificate">
                                     </div>
-                                    <div class="col-sm-3">
+                                    <div class="col-sm-">
                                         <button type="button" class="btn btn-danger btn-lg btn-block">Upload</button>
                                     </div>
                                 </div>
@@ -525,7 +519,7 @@
                                 <div class="form-group row">
                                     <label for="dropdown2" class="col-sm-2 col-form-label">A/L Exam<span class="text-danger">*</span></label>
                                     <div class="col-sm-2">
-                                        <select class="form-control select2" id="dropdown2" name="dropdown2" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                        <select class="form-control select2" id="dropdown2" name="dropdown2">
                                             <option selected="selected">Local</option>
                                             <option>23-2</option>
                                             <option>23-3</option>
@@ -543,7 +537,7 @@
                                 <div class="form-group row">
                                     <label for="dropdownStream" class="col-sm-2 col-form-label">Stream<span class="text-danger">*</span></label>
                                     <div class="col-sm-2">
-                                        <select class="form-control" id="dropdownStream" name="dropdownStream" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                        <select class="form-control" id="dropdownStream" name="dropdownStream">
                                             <option value="physicalScience">Physical Science</option>
                                             <!-- Add more stream options as needed -->
                                         </select>
@@ -551,9 +545,9 @@
                                 </div>
 
                                 <div class="form-group row">
-                                    <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Combiined Maths</label>
-                                    <div class="col-sm-1">
-                                        <select class="form-control" id="dropdownNation" name="dropdownNation" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <label for="dropdownNation" class="col-sm-2 col-form-label label-space">Combined Maths</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control short-dropdown" id="dropdownNation" name="dropdownNation">
                                             <option>A</option>
                                             <option>B</option>
                                             <option>C</option>
@@ -562,9 +556,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Physics</label>
-                                    <div class="col-sm-1">
-                                        <select class="form-control" id="dropdownNation" name="dropdownNation" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <label for="dropdownNation" class="col-sm-2 col-form-label label-space">Physics</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control short-dropdown" id="dropdownNation" name="dropdownNation">
                                             <option>A</option>
                                             <option>B</option>
                                             <option>C</option>
@@ -573,9 +567,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="dropdownNation" class="col-sm-2 col-form-label text-center">Chemistry</label>
-                                    <div class="col-sm-1">
-                                        <select class="form-control" id="dropdownNation" name="dropdownNation" style="background-color: #EBEBEB; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                                    <label for="dropdownNation" class="col-sm-2 col-form-label label-space">Chemistry</label>
+                                    <div class="col-sm-2">
+                                        <select class="form-control short-dropdown" id="dropdownNation" name="dropdownNation">
                                             <option>A</option>
                                             <option>B</option>
                                             <option>C</option>
@@ -594,7 +588,7 @@
                                             <div class="col-sm-7">
                                                 <input type="file" class="form-control-file visually-hidden" id="olCertificate" name="olCertificate">
                                             </div>
-                                            <div class="col-sm-3">
+                                            <div class="col-sm-">
                                                 <button type="button" class="btn btn-danger btn-lg btn-block">Upload</button>
                                             </div>
                                         </div>
@@ -637,7 +631,7 @@
                                     <div class="col-sm-7">
                                         <input type="file" class="form-control-file visually-hidden" id="olCertificate" name="olCertificate">
                                     </div>
-                                    <div class="col-sm-2">
+                                    <div class="col-sm-">
                                         <button type="button" class="btn btn-danger btn-lg btn-block">Upload</button>
                                     </div>
                                 </div>
@@ -646,7 +640,7 @@
                                     <div class="col-sm-7">
                                         <input type="file" class="form-control-file visually-hidden" id="olCertificate" name="olCertificate">
                                     </div>
-                                    <div class="col-sm-2">
+                                    <div class="col-sm-">
                                         <button type="button" class="btn btn-danger btn-lg btn-block">Upload</button>
                                     </div>
                                 </div>
@@ -706,20 +700,24 @@
         <br>
         <div class="row justify-content-center mt-4">
             <div class="col-sm-2">
-                <button type="submit" class="btn btn-danger btn-lg btn-block">Register</button>
+                <button type="submit" class="btn btn-danger btn-lg btn-block" style="width: 130px; border-radius: 15px; font-weight: bold;">Register</button>
             </div>
         </div>
 
+
+        <script>
+            document.getElementById('submitButton').addEventListener('click', function() {
+                var selectedOption1 = document.getElementById('dropdownNation').value;
+                var selectedOption2 = document.getElementById('dropdownNation').value;
     
-        
-        
-        
-
-
-    </div>
-
-    <!--form start-->
-        
+                // Store selected values in sessionStorage
+                sessionStorage.setItem('selectedOption1', selectedOption1);
+                sessionStorage.setItem('selectedOption2', selectedOption2);
+    
+                // Redirect to index3.html
+                window.location.href = 'index3.html';
+            });
+        </script>
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->
