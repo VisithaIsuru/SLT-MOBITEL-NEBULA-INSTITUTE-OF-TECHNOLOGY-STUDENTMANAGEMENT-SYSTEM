@@ -162,7 +162,7 @@ height: 1800px;
             </a>
         </li>
         <li class="nav-item">
-            <a href="./10.5.html" class="nav-link">
+            <a href="10.2.html" class="nav-link">
                 <i class="nav-icon fas fa-edit"></i>
                 <p>Course Management</p>
             </a>
@@ -222,25 +222,25 @@ height: 1800px;
             </a>
         </li>
         <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="10.17.html" class="nav-link">
                 <i class="nav-icon fas fa-file"></i>
                 <p>Clearance Form</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="10.19.html" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
                 <p>Dashboard</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="10.20.html" class="nav-link">
                 <i class="nav-icon fa fa-user-circle"></i>
                 <p>Admin Profile</p>
             </a>
         </li>
         <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="index.html" class="nav-link">
                 <i class="nav-icon fas fa-sign-out-alt"></i>
                 <p>Logout</p>
             </a>
@@ -251,6 +251,25 @@ height: 1800px;
     </div>
   </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const currentPath = window.location.pathname;
+      const navLinks = document.querySelectorAll('.nav-link');
+   
+      navLinks.forEach(link => {
+        const linkPath = new URL(link.href).pathname;
+        if (currentPath === linkPath) {
+          link.classList.add('active');
+          // If the link has a parent with the 'nav-item' class, add 'active' to it as well
+          const parentNavItem = link.closest('.nav-item');
+          if (parentNavItem) {
+            parentNavItem.classList.add('active');
+          }
+        }
+      });
+    });
+</script>
     
   <!-- Control Sidebar -->
   <aside class="control-sidebar control-sidebar-dark">

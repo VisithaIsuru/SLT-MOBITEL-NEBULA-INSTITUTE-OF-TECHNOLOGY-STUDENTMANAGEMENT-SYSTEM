@@ -95,7 +95,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="./10.5.html" class="nav-link">
+                                <a href="10.2.html" class="nav-link">
                                     <i class="nav-icon fas fa-edit"></i>
                                     <p>Course Management</p>
                                 </a>
@@ -184,6 +184,25 @@
             </div>
         </aside>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const currentPath = window.location.pathname;
+          const navLinks = document.querySelectorAll('.nav-link');
+       
+          navLinks.forEach(link => {
+            const linkPath = new URL(link.href).pathname;
+            if (currentPath === linkPath) {
+              link.classList.add('active');
+              // If the link has a parent with the 'nav-item' class, add 'active' to it as well
+              const parentNavItem = link.closest('.nav-item');
+              if (parentNavItem) {
+                parentNavItem.classList.add('active');
+              }
+            }
+          });
+        });
+    </script>
 
     <div class="content-wrapper navbar-white">
         <!-- Content Header (Page header) -->
