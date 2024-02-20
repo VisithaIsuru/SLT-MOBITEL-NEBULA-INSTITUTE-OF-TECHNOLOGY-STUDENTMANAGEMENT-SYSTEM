@@ -112,3 +112,29 @@ margin: 0 0;}
     border: 1px solid #dee2e6; /* Ensure borders are consistent */
     padding: 8px; /* Add padding for better visual appearance */
 }
+
+
+#adjust-bar {
+    width: 215px;
+}
+#adjust-bar::-webkit-slider-runnable-track {
+    background-color: rgb(255, 255, 255);
+}
+/* For Chrome */
+#adjust-bar::-webkit-slider-thumb {
+    background-color: var(--black);
+  }
+ 
+  /* For Firefox */
+  #adjust-bar::-moz-range-thumb {
+    background-color: var(--black);
+  }
+ 
+  /* For Edge */
+  #adjust-bar::-ms-thumb {
+    background-color: var(--black);
+  }
+ 
+  .card-header.text-center {
+    text-align: center;
+}

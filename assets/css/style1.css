@@ -39,6 +39,31 @@ body {
     font-size: 16px;
 }
 
+#adjust-bar {
+    width: 260px;
+}
+#adjust-bar::-webkit-slider-runnable-track {
+    background-color: rgb(255, 255, 255);
+}
+/* For Chrome */
+#adjust-bar::-webkit-slider-thumb {
+    background-color: var(--black);
+  }
+ 
+  /* For Firefox */
+  #adjust-bar::-moz-range-thumb {
+    background-color: var(--black);
+  }
+ 
+  /* For Edge */
+  #adjust-bar::-ms-thumb {
+    background-color: var(--black);
+  }
+ 
+  .card-header.text-center {
+    text-align: center;
+}
+
 /*------------ For small screens------------*/
 @media only screen and (max-width: 768px) {
 
@@ -57,3 +82,4 @@ body {
     }
 
 }
+

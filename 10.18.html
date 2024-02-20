@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SLT MOBITEL NEBULA INSTITUTE OF TECHNOLOGY STUDENTMANAGEMENT SYSTEM</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/assets/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <!-- iCheck -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+
+    <!-- JQVMap -->
+    <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+
+    <!--Them Style-->
+    <link rel="stylesheet" href="assets/css/adminlte.min.css">
+
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+
+    <!-- summernote -->
+    <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css">
+
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Add a gray background color to the specified section */
+        .custom-background-section {
+            background-color: #f2f2f2; /* You can adjust the color as needed */
+        }
+
+        .card-body h5 {
+            font-size: 20px; /* Adjust the font size as needed */
+            font-weight: bold; /* Set font weight to bold for section titles */
+            margin-bottom: 15px; /* Add spacing below the section titles */
+        }
+
+        .form-group.row label {
+            font-size: 16px; /* Adjust the font size as needed */
+            font-weight: bold; /* Set font weight to bold for form labels */
+        }
+        .custom-btn-width {
+        width: 120px; /* Adjust the width as needed */
+    }
+
+    .custom-btn-color {
+        color: black; /* Set the text color to black */
+    }
+    .custom-payment-section .payment-details-title {
+            padding-left: 90px; /* Add padding to the left of the payment details title */
+        }
+
+        .custom-section .col-sm-2,
+        .custom-section .col-sm-4 {
+            width: 200px; /* Adjust the width as needed */
+            text-align: right;
+        }
+
+        .custom-payment-section .payment-details-title {
+            padding-left: 20px; /* Adjust padding */
+        }
+
+        .custom-payment-section .form-group.row,
+        .custom-intake-section .form-group.row {
+            align-items: baseline; /* Align labels and input fields on the same baseline */
+        }
+
+        .custom-section h5 {
+            margin-bottom: 15px; /* Add spacing below the section title */
+            padding-left: 20px; /* Add padding to the left of the title */
+        }
+
+        .custom-section .col-sm-6 {
+            width: 100%; /* Make it full-width */
+        }
+
+        .custom-section .section-title {
+            padding-left: 20px; /* Add padding to the left of the section title */
+        }
+        .form-check {
+            margin-left: 0;
+        }
+        .rounded-corner {
+        border-radius: 15px;
+        background-color: #f8f9fa; /* Change this to your desired background color */
+        padding: 20px;
+        }
+        .custom-btn-size {
+        padding: 5px 20px ; /* Adjust the padding as needed */
+        }
+        .rounded-input {
+        border-radius: 10px; /* Adjust the value as needed */
+    }
+    .custom-form {
+        border-radius: 10px; /* Adjust the value as needed */
+        overflow: hidden; /* Ensure content inside the form does not overflow rounded corners */
+    }
+    </style>
+</head>
+  <body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+
+        <!--Navbar-->
+        <nav class="main-header navbar navbar-expand navber-white navbar-light">
+            <!--Left navbar links-->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                </li>
+            </ul>
+            <h2>NEBULA INSTITUTE OF TECHNOLOGY</h2>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <img style="width: 200px;" src="assets/img/logo_nebula.png" alt="">
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar elevation-4" style="background-color:#DADEFF; height: 340vh;">
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <!-- Sidebar Menu -->
+                    <nav class="mt-2">
+                        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                            <!-- Add icons to the links using the .nav-icon class
+                                with font-awesome or any other icon font library -->
+                                <li class="nav-item has-treeview menu-open">
+                                    <a href="10.4.html" class="nav-link">
+                                        <i class="nav-icon fas fa-user-alt"></i>
+                                        <p>Student Registration</p>
+                                    </a>
+                      
+                                </li>
+                                <li class="nav-item">
+                                    <a href="10.5.html" class="nav-link">
+                                        <i class="nav-icon fas fa-graduation-cap"></i>
+                                        <p>Course Registration</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="10.6.html" class="nav-link">
+                                        <i class="nav-icon fa fa-check-square"></i>
+                                        <p>Eligibility & Registration</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="10.7.html" class="nav-link">
+                                        <i class="nav-icon fa fa-id-badge"></i>
+                                        <p>Student Profile</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./10.8.html" class="nav-link">
+                                        <i class="nav-icon fas fa-address-card"></i>
+                                        <p>Student Other Information</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="10.2.html" class="nav-link">
+                                        <i class="nav-icon fas fa-edit"></i>
+                                        <p>Course Management</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./10.9.html" class="nav-link">
+                                        <i class="nav-icon fas fa-table"></i>
+                                        <p>Module Management</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="10.3.html" class="nav-link">
+                                        <i class="nav-icon far fa-calendar-alt"></i>
+                                        <p>Intake Creation</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./10.10.html" class="nav-link">
+                                        <i class="nav-icon far fa-credit-card"></i>
+                                        <p>Payement</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="10.12.html" class="nav-link">
+                                        <i class="nav-icon fas fa-credit-card"></i>
+                                        <p>Overall Payment</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="./10.11.html" class="nav-link">
+                                        <i class="nav-icon fas fa-calculator"></i>
+                                        <p>Late Payment Calculation</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="10.15.html" class="nav-link">
+                                        <i class="nav-icon fa fa-percent"></i>
+                                        <p>Exam Results</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="10.14.html" class="nav-link">
+                                        <i class="nav-icon fa fa-calendar-check"></i>
+                                        <p>Attendance</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="10.16.html" class="nav-link">
+                                        <i class="nav-icon fas fa-users"></i>
+                                        <p>Student Lists</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="10.13.html" class="nav-link">
+                                        <i class="nav-icon fa fa-table"></i>
+                                        <p>Time Tables</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="10.17.html" class="nav-link">
+                                      <i class="nav-icon fas fa-file"></i>
+                                      <p>Clearance Form</p>
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="10.19.html" class="nav-link">
+                                      <i class="nav-icon fas fa-tachometer-alt"></i>
+                                      <p>Dashboard</p>
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="10.20.html" class="nav-link">
+                                      <i class="nav-icon fa fa-user-circle"></i>
+                                      <p>Admin Profile</p>
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="index.html" class="nav-link">
+                                      <i class="nav-icon fas fa-sign-out-alt"></i>
+                                      <p>Logout</p>
+                                  </a>
+                              </li>
+                        </ul>
+                    </nav>
+                </div>   
+            </div>
+        </aside>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const currentPath = window.location.pathname;
+          const navLinks = document.querySelectorAll('.nav-link');
+       
+          navLinks.forEach(link => {
+            const linkPath = new URL(link.href).pathname;
+            if (currentPath === linkPath) {
+              link.classList.add('active');
+              // If the link has a parent with the 'nav-item' class, add 'active' to it as well
+              const parentNavItem = link.closest('.nav-item');
+              if (parentNavItem) {
+                parentNavItem.classList.add('active');
+              }
+            }
+          });
+        });
+    </script>
+
+    <div class="content-wrapper navbar-white">
+        <div class="content-header">
+            <div class="content-fluid">
+                <div class="row mb-2">
+                    <div class="col-12 p-4 text-center">
+                        <h1 class="m-0 font-weight-bold">Student Clearance - Library</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="content custom-width custom-background-section rounded-corner-dark">
+            <form>
+                <div class="card-body text-left">
+                    <div class="form-group row">
+                        <div class="col-sm-6 text-center"> <!-- Centering the content -->
+                            <label for="studentNumber" class="col-form-label">Student Number</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-input" id="studentNumber1" placeholder="Student Number">
+                                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-input" id="studentNumber2" placeholder="Student Number">
+                                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-input" id="studentNumber3" placeholder="Student Number">
+                                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+                            </div>
+                            <br>
+                            <div class="input-group">
+                                <input type="text" class="form-control rounded-input" id="studentNumber4" placeholder="Student Number">
+                                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 text-center"> <!-- Centering the content -->
+                            <label for="libraryClearance" class="col-form-label">Library Clearance</label>
+        
+                            <div class="input-group d-flex justify-content-center">
+                              <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+                            </div>
+                            <br>
+                            <div class="input-group d-flex justify-content-center">
+                              <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+                            </div>
+                            <br>
+                            <div class="input-group d-flex justify-content-center">
+                              <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+                            </div>
+                            <br>
+                            <div class="input-group d-flex justify-content-center">
+                              <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <br>
+        </section>
+        <br>
+        <br>
+        <section class="content custom-width custom-background-section rounded-corner-dark">
+          <form class="custom-form">
+              <div class="card-body text-left">
+                  <div class="form-group row">
+                      <label for="studentNumber1" class="col-sm-4 col-form-label">Student Name</label>
+                      <div class="col-sm-7">
+                          <div class="input-group">
+                              <input type="text" class="form-control rounded-input" id="studentNumber1" placeholder="Student Name">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="studentNumber2" class="col-sm-4 col-form-label">Course</label>
+                      <div class="col-sm-7">
+                          <div class="input-group">
+                              <input type="text" class="form-control rounded-input" id="studentNumber2" placeholder="Course">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group row">
+                      <label for="studentNumber3" class="col-sm-4 col-form-label">NIC</label>
+                      <div class="col-sm-7">
+                          <div class="input-group">
+                              <input type="text" class="form-control rounded-input" id="studentNumber3" placeholder="NIC">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </form>
+      </section>
+      <br>
+      <br>
+        <div class="col-12 p-4 text-center">
+                    <h3 class="m-0 font-weight-bold">Student Clearance - Hostel</h3>
+          </div>
+          <br>
+        <section class="content custom-width custom-background-section rounded-corner-dark">
+          <form>
+              <div class="card-body text-left">
+                  <div class="form-group row">
+                      <div class="col-sm-6 text-center"> <!-- Centering the content -->
+                          <label for="studentNumber" class="col-form-label">Student Number</label>
+                          <div class="input-group">
+                              <input type="text" class="form-control rounded-input" id="studentNumber1" placeholder="Student Number">
+                              <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+                          </div>
+                          <br>
+                          <div class="input-group">
+                              <input type="text" class="form-control rounded-input" id="studentNumber2" placeholder="Student Number">
+                              <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+                          </div>
+                          <br>
+                          <div class="input-group">
+                              <input type="text" class="form-control rounded-input" id="studentNumber3" placeholder="Student Number">
+                              <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+                          </div>
+                          <br>
+                          <div class="input-group">
+                              <input type="text" class="form-control rounded-input" id="studentNumber4" placeholder="Student Number">
+                              <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+                          </div>
+                      </div>
+                      <div class="col-sm-6 text-center"> <!-- Centering the content -->
+                          <label for="libraryClearance" class="col-form-label">Hostel Clearance</label>
+      
+                          <div class="input-group d-flex justify-content-center">
+                            <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+                          </div>
+                          <br>
+                          <div class="input-group d-flex justify-content-center">
+                            <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+                          </div>
+                          <br>
+                          <div class="input-group d-flex justify-content-center">
+                            <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+                          </div>
+                          <br>
+                          <div class="input-group d-flex justify-content-center">
+                            <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </form>
+          <br>
+      </section>
+      <br>
+      <div class="col-12 p-4 text-center">
+        <h3 class="m-0 font-weight-bold">Student Clearance - Payment</h3>
+</div>
+<br>
+<section class="content custom-width custom-background-section rounded-corner-dark">
+<form>
+  <div class="card-body text-left">
+      <div class="form-group row">
+          <div class="col-sm-6 text-center"> <!-- Centering the content -->
+              <label for="studentNumber" class="col-form-label">Student Number</label>
+              <div class="input-group">
+                  <input type="text" class="form-control rounded-input" id="studentNumber1" placeholder="Student Number">
+                  <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+              </div>
+              <br>
+              <div class="input-group">
+                  <input type="text" class="form-control rounded-input" id="studentNumber2" placeholder="Student Number">
+                  <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+              </div>
+              <br>
+              <div class="input-group">
+                  <input type="text" class="form-control rounded-input" id="studentNumber3" placeholder="Student Number">
+                  <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+              </div>
+              <br>
+              <div class="input-group">
+                  <input type="text" class="form-control rounded-input" id="studentNumber4" placeholder="Student Number">
+                  <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+              </div>
+          </div>
+          <div class="col-sm-6 text-center"> <!-- Centering the content -->
+              <label for="libraryClearance" class="col-form-label">Payment Clearance</label>
+
+              <div class="input-group d-flex justify-content-center">
+                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+              </div>
+              <br>
+              <div class="input-group d-flex justify-content-center">
+                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+              </div>
+              <br>
+              <div class="input-group d-flex justify-content-center">
+                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+              </div>
+              <br>
+              <div class="input-group d-flex justify-content-center">
+                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</form>
+<br>
+</section>
+<br>
+      <div class="col-12 p-4 text-center">
+        <h3 class="m-0 font-weight-bold">Student Clearance - Project Clearance</h3>
+</div>
+<br>
+<section class="content custom-width custom-background-section rounded-corner-dark">
+<form>
+  <div class="card-body text-left">
+      <div class="form-group row">
+          <div class="col-sm-6 text-center"> <!-- Centering the content -->
+              <label for="studentNumber" class="col-form-label">Student Number</label>
+              <div class="input-group">
+                  <input type="text" class="form-control rounded-input" id="studentNumber1" placeholder="Student Number">
+                  <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+              </div>
+              <br>
+              <div class="input-group">
+                  <input type="text" class="form-control rounded-input" id="studentNumber2" placeholder="Student Number">
+                  <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+              </div>
+              <br>
+              <div class="input-group">
+                  <input type="text" class="form-control rounded-input" id="studentNumber3" placeholder="Student Number">
+                  <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+              </div>
+              <br>
+              <div class="input-group">
+                  <input type="text" class="form-control rounded-input" id="studentNumber4" placeholder="Student Number">
+                  <button type="button" class="btn custom-btn-size ml-2" style="width: 100px; border-radius: 10px; background-color: #bef4ec; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" onclick="buttonClicked(1)">Details</button>
+              </div>
+          </div>
+          <div class="col-sm-6 text-center"> <!-- Centering the content -->
+              <label for="libraryClearance" class="col-form-label">Project Clearance</label>
+
+              <div class="input-group d-flex justify-content-center">
+                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+              </div>
+              <br>
+              <div class="input-group d-flex justify-content-center">
+                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+              </div>
+              <br>
+              <div class="input-group d-flex justify-content-center">
+                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+              </div>
+              <br>
+              <div class="input-group d-flex justify-content-center">
+                <button type="button" class="btn custom-btn-size ml-2" style="width: 100px;border-radius: 10px; background-color: #28bea7; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">Yes</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</form>
+</section>
+<br>
+<br>
+<br>
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+$.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="assets/js/adminlte.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="assets/js/pages/dashboard.js"></script>
+
+</body>
+</html>        
